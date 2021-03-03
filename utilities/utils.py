@@ -6,12 +6,16 @@ def sum(list_of_integers):
         if len(list_of_integers) <= 0:
             raise Exception("List cannot be empty.")
         
-        # Check if list items are positive integers
-        if list_of_integers[0] < 0:
-            raise Exception("Positive integers only.")
+        # Iterate through the list of integers
+        for integer_item in list_of_integers:
+            print("integer: ",integer_item)
 
-        # Build the sum
-        sum_of_integers = list_of_integers[0]
+            # Check if list items are positive integers
+            if not isinstance(integer_item, int) or integer_item < 0:
+                raise Exception("Positive integers only.")
+
+            # Build the sum
+            sum_of_integers = list_of_integers[0]
     
     else:
         raise Exception("Input type 'list' only.")

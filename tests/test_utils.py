@@ -29,8 +29,10 @@ def test_only_list(bad_input):
 
 # Test input is only list of positive integers
 @pytest.mark.parametrize('bad_input', [
-    # ([1.2, 3.40]),
-    # (['a','b','c']),
+    ([1.2, 3.40]),
+    (['a','b','c']),
+    ([1,2,-3]),
+    ([[],['a'],[1]]),
     ([-1])
 ])
 def test_only_positive_integers(bad_input):
