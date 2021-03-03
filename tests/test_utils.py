@@ -2,7 +2,10 @@ from utilities.utils import sum
 import pytest
 
 @pytest.mark.parametrize('list_of_integers, result', [
-    ([1],1)
+    ([1],1),
+    ([1,2,3,4,5], 15),
+    ([999999,1,9999978], 10999978),
+    ([9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9],207)
 ])
 def test_sum(list_of_integers, result):
     assert sum(list_of_integers) == result
@@ -39,6 +42,7 @@ def test_only_positive_integers(bad_input):
     expected_exception_phrase = "Positive integers only."
     catch_exception(bad_input, expected_exception_phrase)
 
+# Test for empty lists
 def test_empty_list():
     empty_list = []
     expected_exception_phrase = "List cannot be empty."

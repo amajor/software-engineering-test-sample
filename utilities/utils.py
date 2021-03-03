@@ -1,6 +1,7 @@
 def sum(list_of_integers):
     # Check if input is a list only
     if isinstance(list_of_integers, list):
+        sum_of_integers = 0
 
         # Check if list has items
         if len(list_of_integers) <= 0:
@@ -15,7 +16,7 @@ def sum(list_of_integers):
                 raise Exception("Positive integers only.")
 
             # Build the sum
-            sum_of_integers = list_of_integers[0]
+            sum_of_integers += integer_item
     
     else:
         raise Exception("Input type 'list' only.")
