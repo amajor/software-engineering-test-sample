@@ -1,8 +1,8 @@
 on: push
-name: CI Pipeline - On Push
+name: Unit Tests
 jobs:
   gitHubActionForPytest:
-    name: GitHub Action for pytest
+    name: Run setup and pytest
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
