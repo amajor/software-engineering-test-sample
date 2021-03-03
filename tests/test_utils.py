@@ -36,3 +36,8 @@ def test_only_list(bad_input):
 def test_only_positive_integers(bad_input):
     expected_exception_phrase = "Positive integers only."
     catch_exception(bad_input, expected_exception_phrase)
+
+def test_empty_list():
+    empty_list = []
+    expected_exception_phrase = "List cannot be empty."
+    catch_exception(empty_list, expected_exception_phrase)
