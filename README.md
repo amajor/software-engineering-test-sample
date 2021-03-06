@@ -20,3 +20,10 @@ You can see the tests outlined in the test file:
 The tests automatically run in the pipeline.
 
 https://github.com/amajor/software-engineering-test-sample/actions/workflows/main.yml
+
+- [x] Test for successful summation of any number of list items
+- [x] Test input is only list of integers (throws exception if not)
+- [x] Test input is only list of positive integers (throws exception if not)
+- [x] Test for empty lists (throws exception if empty)
+
+<img width="924" alt="Passing Tests" src="https://user-images.githubusercontent.com/796753/110190905-adb86580-7df3-11eb-92f1-8334f36feb8a.png">
